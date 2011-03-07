@@ -1,0 +1,88 @@
+body {
+   margin: 0px;
+   padding:0px;
+   font-family: sans-serif;
+}
+
+div {
+   border-style: solid;
+   border-width: 1px;
+}
+div.lhs {
+   float: left;
+   width: 8cm;
+}
+
+div.placeholder {
+   color: #aaaaaa;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+
+div.placeholder span{
+   color: #aaaaaa;
+   text-align: center;
+   position: absolute;
+   width: 100%;
+   top: 50%;
+   font-size: x-large;
+   opacity:0.4;
+}
+
+h1 {
+   width: 100%;
+   text-align: center;
+   margin: 0px;
+   padding: 0px;
+}
+
+
+div.rhs {
+   float: right;
+}
+
+div#portrait {
+   width: 100%;
+   height: 10cm;
+}
+
+div.stat-block-container {
+   width: 100%;
+}
+
+table {
+   border-collapse:collapse;
+}
+
+table#attributes {
+   margin-top: 2px;
+   width: 8cm;
+   border-style: solid;
+   border-width: 1px;
+}
+
+table#attributes tr {
+   width: 5cm;
+   border-style: solid;
+   border-width: 1px;
+}
+
+
+th.field-header {
+   width: 1cm;
+   border-right-style: solid;
+   border-width: 1px;
+   background-color: #eeeeee;
+}
+table#attributes td.field-cell {
+   width: 1cm;
+   border-right-style: solid;
+   border-width: 1px;
+}
+
+.attribute-text {
+   width: 100%;
+   border-style: none;
+   text-align: center;
+}

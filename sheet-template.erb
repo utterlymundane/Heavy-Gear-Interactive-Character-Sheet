@@ -1,0 +1,46 @@
+<%
+   def mkpcdata(name, label) 
+     return "<div class=\"pc-data\"><label for=\"#{name}-text\">#{label}:</label> <input id=\"#{name}-text\" class=\"pc-data-text user-entered\"/></div>"
+   end
+   header_fields = { 'player' => 'Player',
+                     'char-name' => 'Character' }
+%>
+<html>
+<head> <title>Heavy Gear Interactive Character Sheet</title>
+<link rel="stylesheet" type="text/css" href="sheet.css" />
+</head>
+<body>
+<div class="header">
+     <% header_fields.each { |k,v| %>
+         <%= mkpcdata(k,v) %>
+     <%}%>
+</div>
+<div class="lhs">
+  <div id="portrait">
+     <div class="placeholder" id="portrait-placeholder"><span>Portrait</span></div>
+  </div>
+  <div class="stat-block-container" id="attribute-container">
+    <h1>Attributes</h1>
+    <table id="attributes">
+      <tr><th class="field-header">AGI</th class="field-header"><th class="field-header">APP</th class="field-header"><th class="field-header">BLD</th class="field-header"><th class="field-header">FIT</th class="field-header"><th class="field-header">PSY</th class="field-header"></tr>
+      <tr><td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      <td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      <td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      <td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      <td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      </tr>
+      <tr><th class="field-header">AGI</th class="field-header"><th class="field-header">APP</th class="field-header"><th class="field-header">BLD</th class="field-header"><th class="field-header">FIT</th class="field-header"><th class="field-header">PSY</th class="field-header"></tr>
+      <tr><td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      <td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      <td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      <td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      <td class="field-cell"><input maxlength="2" class="attribute-text"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="rhs">
+</div>
+</body>
+</html>
